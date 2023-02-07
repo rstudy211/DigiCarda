@@ -4,13 +4,17 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div class="flex z-20 text-white rounded-md sticky top-0 flex-col items-center border-b-[10px] border-white justify-center  left-24  bg-pink-700 py-2 drop-shadow-lg">
-        <h1 class="text-6xl font-Popins font">Emitra & E-taxway</h1>
-        <p class="text-3xl text-green-600">& e-Tax Way Group</p>
+      <div class="flex z-20 text-white rounded-md sticky top-0 flex-col items-center justify-center px-4 py-2 bg-indigo-800 drop-shadow-lg border-b border-white">
+        <h1 class="text-4xl font-Popins font tracking-wide text-shadow-md mb-2 sm:mb-0 sm:text-5xl">
+          Emitra &amp; E-taxway
+        </h1>
+        <p class="text-lg font-medium text-yellow-300 text-shadow-md mb-2 sm:mb-0 sm:text-2xl">
+          e-Tax Way Group
+        </p>
+        <div class="w-16 h-1 mt-2 bg-yellow-300 rounded-full"></div>
       </div>
-
-      <div class="flex flex-col  justify-center items-center h-full border-x-[30px] border-pink-800 py-6">
-        <span class="text-pink-700 text-3xl border-b-4 px-7 py-2 border-pink-600 my-5">
+      <div class="flex flex-col  justify-center items-center h-full py-6">
+        <span class="text-indigo-700 text-3xl border-b-4 px-7 py-2 border-indigo-600 my-5">
           Products & Services
         </span>
 
@@ -68,10 +72,10 @@ function App() {
           </div>
         </div>
       </div>
-      <div class=" bg-gradient-to-r from-pink-800 via-pink-500 to-pink-800 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
-        <div class="flex flex-col bg-white text-black justify-center items-center mx-20 my-10 rounded-md">
+      <div class=" bg-gradient-to-r from-indigo-800 via-indigo-500 to-indigo-800 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
+        <div class="flex flex-col bg-white text-black justify-center items-center  mx-10 md:mx-20 lg:mx-20 my-10 rounded-md">
           <div class="py-2">
-            <span class="text-pink-700 text-3xl border-b-4 px-7 py-2 border-pink-700 my-5">
+            <span class="text-indigo-700 text-3xl border-b-4 px-7 py-2 border-indigo-700 my-5">
               About Me
             </span>
             <div class="h-[150px] w-[150px] my-10 ring-[10px] ring-white ring-opacity-25 mx-auto overflow-hidden rounded-full">
@@ -82,17 +86,17 @@ function App() {
               />
             </div>
           </div>
-          <p class="text-center w-[500px]">
-            “Harshal Mewara & Associates”, we adopt a structupink and
+          <p class="text-center sm:w-64 w-full mx-20">
+            “Harshal Mewara & Associates”, we adopt a structuindigo and
             disciplined advisory approach and provide you portfolio solutions
-            which meet your desipink financial goals and milestones.
+            which meet your desiindigo financial goals and milestones.
           </p>
           <div class="flex justify-center gap-5 my-10">
             <i class="bi bg-green-500 text-white rounded-full px-2 py-1 text-2xl bi-whatsapp"></i>
             <i class="bi text-[#0088cc] rounded-full  text-4xl bi-telegram"></i>
           </div>
         </div>
-        <div class="flex flex-col justify-center items-center text-white w-full ">
+        <div class="flex flex-col justify-center items-center h-[80%] text-white w-full ">
           <span class="text-white text-3xl border-b-4 px-7 py-2 border-white my-5">
             Contact Us
           </span>
@@ -122,7 +126,7 @@ function App() {
             <br></br>
             <button
               type="submit"
-              class="rounded hover:bg-pink-600 hover:text-white bg-white text-pink-700 w-[100px] py-1"
+              class="rounded hover:bg-indigo-600 hover:text-white bg-white text-indigo-700 w-[100px] py-1"
             >
               Send
             </button>
@@ -130,12 +134,19 @@ function App() {
           <br></br>
         </div>
       </div>
-      <div class="p-2 bg-pink-100 w-full pt-8 border-t border-gray-200 text-center">
-        <a class="">hrmsharma5@email.com</a>
-        <p class="leading-normal my-5">
-          1461 Vinoba Bhave Naga Near Khade Ganesh Ji, Kota (Raj.)
-        </p>
-      </div>
+      <footer class="bg-indigo-100 py-12 border-t border-indigo-200">
+        <div class="container mx-auto px-4 text-center text-neutral-400">
+          <a
+            class="text-neutral-600 hover:text-indigo-500 mb-5"
+            href="mailto:hrmsharma5@email.com"
+          >
+            hrmsharma5@email.com
+          </a>
+          <p class="leading-normal text-neutral-600">
+            1461 Vinoba Bhave Naga Near Khade Ganesh Ji, Kota (Raj.)
+          </p>
+        </div>
+      </footer>
     </>
   );
 }
