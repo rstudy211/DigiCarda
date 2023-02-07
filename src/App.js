@@ -13,13 +13,13 @@ function App() {
         </p>
         <div class="w-16 h-1 mt-2 bg-yellow-300 rounded-full"></div>
       </div>
-      <div class="flex flex-col  justify-center items-center h-full py-6">
+      <div class="flex flex-col  shadow-inner  justify-center items-center h-full py-6">
         <span class="text-indigo-700 text-3xl border-b-4 px-7 py-2 border-indigo-600 my-5">
           Products & Services
         </span>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-6">
-          <div class="border border-black rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 lg:px-11 py-16">
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:shadow-gray-500 border-gray-300 rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
             <p class="text-2xl text-center">Income Tax</p>
             <img
               class="h-56 w-96 mx-4 rounded "
@@ -36,7 +36,7 @@ function App() {
               </span>
             </a>
           </div>
-          <div class="border border-black rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:shadow-gray-500 border-neutral-300 rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
             <p class="text-2xl text-center">GST-Registration</p>
             <img
               class="h-56 w-96 mx-4 rounded "
@@ -53,7 +53,7 @@ function App() {
               </span>
             </a>
           </div>
-          <div class="border border-black rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:shadow-gray-500 border-slate-300 rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
             <p class="text-2xl text-center">Pancard</p>
             <img
               class="h-56 w-96 mx-4 rounded "
