@@ -100,7 +100,7 @@ function App() {
           <span class="text-white text-3xl border-b-4 px-7 py-2 border-white my-5">
             Contact Us
           </span>
-          <form class="flex sm:w-[80%] lg:w-[60%] flex-col items-center gap-2 rounded-md bg-white bg-opacity-25 px-7 py-5 ">
+          <form class="flex w-[90%] sm:w-[90%] lg:w-[60%] flex-col items-center gap-2 rounded-md bg-white bg-opacity-25 px-7 py-5 ">
             <div class="flex w-full flex-col">
               <label for="username" class="pb-1">
                 Name
