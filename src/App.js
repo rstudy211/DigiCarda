@@ -202,11 +202,13 @@ function App() {
             1461 Vinoba Bhave Naga Near Khade Ganesh Ji, Kota (Raj.)
           </p>
           <p className="text-gray-600">
-            <i class="bi bi-telephone  px-2"></i>{" "}
-            <span className="underline underline-offset-1">
-              {" "}
-              +91 9414278219
-            </span>
+            <a href="tel:+919462748219">
+              <i class="bi bi-telephone  px-2"></i>{" "}
+              <span className="underline underline-offset-1">
+                {" "}
+                +91 9462748219
+              </span>
+            </a>
           </p>
         </div>
       </footer>
