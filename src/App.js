@@ -49,13 +49,13 @@ function App() {
         <div className="hidden md:block"></div>
       </div>
       <div class="flex flex-col bg-gray-100  shadow-inner  justify-center items-center py-3 md:py-6">
-        <span class="text-indigo-700   font-bold text-3xl md:text-5xl px-12 ">
+        <span class="text-indigo-700   font-bold  text-2xl md:text-5xl px-12 ">
           Products & Services
         </span>
 
         <div class="grid bg-gray-100 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-11 py-3 md:py-16">
           <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-gray-600 hover:shadow-white-500 border-white-300 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
-            <p class="text-2xl text-center font-poppins font-bold">
+            <p class=" text-xl md:text-2xl text-center font-poppins font-bold">
               Income Tax
             </p>
             <img
@@ -75,7 +75,7 @@ function App() {
           </div>
 
           <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-gray-600 hover:shadow-white-500 border-neutral-300 rounded-2xl px-5 py-3 flex flex-col gap-3 justify-center items-center">
-            <p class="text-2xl text-center font-poppins font-bold">
+            <p class="text-xl md:text-2xl text-center font-poppins font-bold">
               GST-Registration
             </p>
             <img
@@ -94,7 +94,9 @@ function App() {
             </a>
           </div>
           <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-gray-600 hover:shadow-white-500 border-slate-300 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
-            <p class="text-2xl text-center font-poppins font-bold">Pancard</p>
+            <p class=" text-xl md:text-2xl text-center font-poppins font-bold">
+              Pancard
+            </p>
             <img
               class="h-56 w-96 mx-4 rounded "
               src="https://www.shutterstock.com/shutterstock/photos/1681665595/display_1500/stock-vector-dummy-pan-card-unique-identity-document-for-indian-citizen-issued-by-government-of-india-vector-1681665595.jpg"
@@ -296,7 +298,7 @@ function App() {
                 </h2>
               </header>
               <div class="p-3">
-                <div class="overflow-x-auto text-base font-semibold  text-gray-400">
+                <div class="overflow-x-auto text-sm md:text-base font-semibold  text-gray-400">
                   {/* <table class="table-auto w-full">
                     <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
                       <tr>
@@ -462,9 +464,9 @@ function App() {
                       </tr>
                     </tbody>
                   </table> */}
-                  <div className="flex  px-2 justify-around items-center">
+                  <div className="flex  px-2 justify-between md:justify-around items-center">
                     <img
-                      className="h-44 w-44"
+                      className="h-28 md:h-44 w-44"
                       src="https://media.istockphoto.com/id/828088276/vector/qr-code-illustration.jpg?s=612x612&w=0&k=20&c=FnA7agr57XpFi081ZT5sEmxhLytMBlK4vzdQxt8A70M="
                     ></img>
                     <ul className="border-l-2 border-green-400 px-2">
