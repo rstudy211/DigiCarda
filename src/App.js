@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 // import toast from "react-hot-toast";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import logoImg from "./images/logo.png";
 function App() {
   const form = useRef();
 
@@ -32,68 +33,79 @@ function App() {
   };
   return (
     <>
-      <div class="flex z-20 text-white rounded-md sticky top-0 flex-col items-center justify-center px-4 py-2 bg-indigo-800 drop-shadow-lg border-b border-white">
-        <h1 class="text-4xl font-Popins font tracking-wide text-shadow-md mb-2 sm:mb-0 sm:text-5xl">
-          Emitra &amp; E-taxway
-        </h1>
-        <p class="text-lg font-medium text-yellow-300 text-shadow-md mb-2 sm:mb-0 sm:text-2xl">
-          e-Tax Way Group
-        </p>
-        <div class="w-16 h-1 mt-2 bg-yellow-300 rounded-full"></div>
+      <div class="flex z-20 px-5 text-white sticky font-bold top-0 flex-row items-center justify-between bg-gradient-to-r from-indigo-800 via-indigo-500 to-indigo-800 drop-shadow-lg border-b py-2 border-white">
+        <div className="rounded-full flex justify-center items-center h-20 w-20 text-xl md:text-2xl  ring-offset-2  text-white bg-indigo-600">
+          <h1>E-Tax</h1>
+        </div>
+        <div className="flex flex-col items-end md:items-center md:mr-16  ">
+          <h1 class="text-2xl lg:pb-1 font-poppins  tracking-wide text-shadow-md lg:mb-2 mb-0 lg:text-5xl">
+            Emitra &amp; E-taxway
+          </h1>
+          <p class="text-lg font-medium text-yellow-300 text-shadow-md mb-2 sm:mb-0 sm:text-2xl">
+            e-Tax Way Group
+          </p>
+          <div class="w-16 h-1 md:mt-2 bg-yellow-300 rounded-full"></div>
+        </div>
+        <div className="hidden md:block"></div>
       </div>
-      <div class="flex flex-col  shadow-inner  justify-center items-center h-full py-6">
-        <span class="text-indigo-700 text-3xl border-b-4 px-7 py-2 border-indigo-600 my-5">
+      <div class="flex flex-col   shadow-inner  justify-center items-center py-3 md:py-6">
+        <span class="text-indigo-700  font-bold text-3xl md:text-5xl px-12 ">
           Products & Services
         </span>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 lg:px-11 py-16">
-          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:shadow-white-500 border-white-300 rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
-            <p class="text-2xl text-center">Income Tax</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-11 py-3 md:py-16">
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#4338ca] text-white hover:shadow-white-500 border-white-300 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
+            <p class="text-2xl text-center font-poppins font-bold">
+              Income Tax
+            </p>
             <img
               class="h-56 w-96 mx-4 rounded "
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPsgnEw_BMf9KfwRuYeTUokVSwJtaJqjPQntTF_A8uT3eQRTnNPzuSev1o8pskwyLD1sY&usqp=CAU"
               alt=""
             />
             <a
-              class=""
+              class="my-3 cursor-pointer hover:scale-110 transition-transform"
               href="https://api.whatsapp.com/send?phone=919414278219&amp;text=Enquiry for product: Income tax"
               target="_blank"
             >
-              <span class="rounded animate-pulse bg-orange-500 px-6 py-1 text-sm text-white">
-                ENQIRE NOW
+              <span class="rounded  bg-orange-500 px-6 py-2 text-sm text-white">
+                ENQIRY NOW
               </span>
             </a>
           </div>
-          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:shadow-white-500 border-neutral-300 rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
-            <p class="text-2xl text-center">GST-Registration</p>
+
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#4338ca] text-white hover:shadow-white-500 border-neutral-300 rounded-2xl px-5 py-3 flex flex-col gap-3 justify-center items-center">
+            <p class="text-2xl text-center font-poppins font-bold">
+              GST-Registration
+            </p>
             <img
               class="h-56 w-96 mx-4 rounded "
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk4vwSqXdziYJsZ-522-sT-4NJvoLEdvDaww&usqp=CAU"
               alt=""
             />
             <a
-              class=""
+              class="my-3 cursor-pointer hover:scale-110 transition-transform"
               href="https://api.whatsapp.com/send?phone=919414278219&amp;text=Enquiry for product: GST-Registration"
               target="_blank"
             >
-              <span class="rounded animate-pulse bg-orange-500 px-6 py-1 text-sm text-white">
+              <span class="rounded  bg-orange-500 px-6 py-2 text-sm text-white">
                 ENQIRE NOW
               </span>
             </a>
           </div>
-          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] hover:shadow-white-500 border-slate-300 rounded py-2 px-4 flex flex-col gap-3 justify-center items-center">
-            <p class="text-2xl text-center">Pancard</p>
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-[#4338ca] text-white hover:shadow-white-500 border-slate-300 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
+            <p class="text-2xl text-center font-poppins font-bold">Pancard</p>
             <img
               class="h-56 w-96 mx-4 rounded "
               src="https://www.shutterstock.com/shutterstock/photos/1681665595/display_1500/stock-vector-dummy-pan-card-unique-identity-document-for-indian-citizen-issued-by-government-of-india-vector-1681665595.jpg"
               alt=""
             />
             <a
-              class=""
+              class="my-3 cursor-pointer hover:scale-110 transition-transform"
               href="https://api.whatsapp.com/send?phone=919414278219&amp;text=Enquiry for product: Pancard"
               target="_blank"
             >
-              <span class="rounded animate-pulse bg-orange-500 px-6 py-1 text-sm text-white">
+              <span class="rounded  bg-orange-500 px-6 py-2 text-sm text-white">
                 ENQIRE NOW
               </span>
             </a>
@@ -116,7 +128,7 @@ function App() {
                 />
               </div>
             </div>
-            <p class="text-center sm:w-42 md:w-42 ">
+            <p class="text-center leading-7 text-neutral-700 font-light sm:w-42 md:w-42 ">
               “As Harimohan Sharma & Assosiates, we provides a range of
               financial services, including ITR filing, GST registration and
               filing, PAN card services, and eMitra services. With expertise in
@@ -153,6 +165,18 @@ function App() {
                 name="user_name"
                 class="rounded text-black px-2 py-1"
                 type="text"
+                required
+              />
+            </div>
+            <div class="flex w-full  flex-col">
+              <label for="mobile_number" class="pb-1">
+                Mobile No.
+              </label>
+              <input
+                name="mobile_number"
+                class="rounded text-black px-2 py-1"
+                type="tel"
+                pattern="[0-9]{10}"
                 required
               />
             </div>
