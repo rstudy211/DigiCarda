@@ -10,6 +10,7 @@ import qrcode from "./images/qrcode.png";
 import ServicesList from "./components/ServicesList";
 import QrCodeScanner from "./components/QrCodeWithUPI";
 import QrCodeWithUPI from "./components/QrCodeWithUPI";
+import profilepic from "./images/profilepic.jpeg";
 function App() {
   const form = useRef();
 
@@ -384,10 +385,11 @@ function App() {
               <span class="text-white-700 text-3xl border-b-4 px-7 py-2 border-white-700 my-5">
                 About Me
               </span>
-              <div class="h-[150px] w-[150px] my-10 ring-[10px] ring-white ring-opacity-25 mx-auto overflow-hidden rounded-full">
+
+              <div class="h-40 w-40 my-10 mx-auto rounded-full overflow-hidden">
                 <img
-                  class="  "
-                  src="https://media-public.canva.com/MADQ4_le-qs/1/screen.jpg"
+                  class="w-full h-full object-cover"
+                  src={profilepic}
                   alt=""
                 />
               </div>
