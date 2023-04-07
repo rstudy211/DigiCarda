@@ -27,7 +27,8 @@ function App() {
         (result) => {
           console.log(result.text);
           console.log("message sent");
-          toast.success("Message Sent");
+          toast.success("Message sent successfully");
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);
