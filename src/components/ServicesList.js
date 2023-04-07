@@ -42,12 +42,21 @@ function ServiceList() {
             </li>
           ))}
         </ul>
-        {!showAll && (
+        {!showAll ? (
           <button
-            className="block mx-auto mt-8 py-2 px-4 bg-indigo-600 text-white font-medium rounded-md transition-colors duration-300 hover:bg-indigo-700"
+            className="block mx-auto mt-8 animate-bounce py-2 px-4 bg-indigo-600 text-white font-medium rounded-md transition-colors duration-300 hover:bg-indigo-700"
             onClick={() => setShowAll(true)}
           >
             Show More
+            <i class="bi bi-chevron-double-down ml-2"></i>
+          </button>
+        ) : (
+          <button
+            className="block mx-auto mt-8 py-2 px-4 animate-bounce bg-indigo-600 text-white font-medium rounded-md transition-colors duration-300 hover:bg-indigo-700"
+            onClick={() => setShowAll(false)}
+          >
+            Show Less
+            <i class="bi bi-chevron-double-up ml-2"></i>
           </button>
         )}
       </div>
