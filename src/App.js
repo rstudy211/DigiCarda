@@ -6,6 +6,10 @@ import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import logoImg from "./images/logo.png";
+import qrcode from "./images/qrcode.png";
+import ServicesList from "./components/ServicesList";
+import QrCodeScanner from "./components/QrCodeWithUPI";
+import QrCodeWithUPI from "./components/QrCodeWithUPI";
 function App() {
   const form = useRef();
 
@@ -48,7 +52,7 @@ function App() {
         </div>
         <div className="hidden md:block"></div>
       </div>
-      <div class="flex flex-col bg-gray-100  shadow-inner  justify-center items-center py-3 md:py-6">
+      <div class="flex flex-col bg-gray-100 py-8 shadow-inner  justify-center items-center  md:py-12">
         <span class="text-indigo-700   font-bold  text-2xl md:text-5xl px-12 ">
           Products & Services
         </span>
@@ -114,7 +118,7 @@ function App() {
           </div>
         </div>
         {/* <!-- component --> */}
-        <section class="antialiased  bg-gray-100 text-gray-600 py-4 w-full px-4">
+        {/* <section class="antialiased  bg-gray-100 text-gray-600 py-4 w-full px-4">
           <div class="flex flex-col gap-4 lg:flex-row justify-center  ">
             <div class="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
               <header class="px-5 py-4 border-b border-gray-100">
@@ -290,7 +294,7 @@ function App() {
                 </div>
               </div>
             </div>
-            {/* <!-- Table --> */}
+            
             <div class="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
               <header class="px-5 py-4 border-b border-gray-100">
                 <h2 class="font-semibold text-gray-800">
@@ -299,176 +303,8 @@ function App() {
               </header>
               <div class="p-3">
                 <div class="overflow-x-auto text-sm md:text-base font-semibold  text-gray-400">
-                  {/* <table class="table-auto w-full">
-                    <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
-                      <tr>
-                        <th class="p-2 whitespace-nowrap">
-                          <div class="font-semibold text-left">Name</div>
-                        </th>
-                        <th class="p-2 whitespace-nowrap">
-                          <div class="font-semibold text-left">Email</div>
-                        </th>
-                        <th class="p-2 whitespace-nowrap">
-                          <div class="font-semibold text-left">Spent</div>
-                        </th>
-                        <th class="p-2 whitespace-nowrap">
-                          <div class="font-semibold text-center">Country</div>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody class="text-sm divide-y divide-gray-100">
-                      <tr>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
-                              <img
-                                class="rounded-full"
-                                src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-05.jpg"
-                                width="40"
-                                height="40"
-                                alt="Alex Shatov"
-                              />
-                            </div>
-                            <div class="font-medium text-gray-800">
-                              Alex Shatov
-                            </div>
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left">alexshatov@gmail.com</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left font-medium text-green-500">
-                            $2,890.66
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-lg text-center">??</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
-                              <img
-                                class="rounded-full"
-                                src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-06.jpg"
-                                width="40"
-                                height="40"
-                                alt="Philip Harbach"
-                              />
-                            </div>
-                            <div class="font-medium text-gray-800">
-                              Philip Harbach
-                            </div>
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left">philip.h@gmail.com</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left font-medium text-green-500">
-                            $2,767.04
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-lg text-center">??</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
-                              <img
-                                class="rounded-full"
-                                src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-07.jpg"
-                                width="40"
-                                height="40"
-                                alt="Mirko Fisuk"
-                              />
-                            </div>
-                            <div class="font-medium text-gray-800">
-                              Mirko Fisuk
-                            </div>
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left">mirkofisuk@gmail.com</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left font-medium text-green-500">
-                            $2,996.00
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-lg text-center">??</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
-                              <img
-                                class="rounded-full"
-                                src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-08.jpg"
-                                width="40"
-                                height="40"
-                                alt="Olga Semklo"
-                              />
-                            </div>
-                            <div class="font-medium text-gray-800">
-                              Olga Semklo
-                            </div>
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left">olga.s@cool.design</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left font-medium text-green-500">
-                            $1,220.66
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-lg text-center">??</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="flex items-center">
-                            <div class="w-10 h-10 flex-shrink-0 mr-2 sm:mr-3">
-                              <img
-                                class="rounded-full"
-                                src="https://raw.githubusercontent.com/cruip/vuejs-admin-dashboard-template/main/src/images/user-36-09.jpg"
-                                width="40"
-                                height="40"
-                                alt="Burak Long"
-                              />
-                            </div>
-                            <div class="font-medium text-gray-800">
-                              Burak Long
-                            </div>
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left">longburak@gmail.com</div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-left font-medium text-green-500">
-                            $1,890.66
-                          </div>
-                        </td>
-                        <td class="p-2 whitespace-nowrap">
-                          <div class="text-lg text-center">??</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table> */}
                   <div className="flex  px-2 justify-between md:justify-around items-center">
-                    <img
-                      className="h-28 md:h-44 w-44"
-                      src="https://media.istockphoto.com/id/828088276/vector/qr-code-illustration.jpg?s=612x612&w=0&k=20&c=FnA7agr57XpFi081ZT5sEmxhLytMBlK4vzdQxt8A70M="
-                    ></img>
+                    <img className="h-28 md:h-44 w-44" src={qrcode}></img>
                     <ul className="border-l-2 border-green-400 px-2">
                       <h2 class="font-semibold    text-gray-900">9414278219</h2>
                       <h1 className="font-light  flex gap-2 text-sm">
@@ -508,7 +344,7 @@ function App() {
                         Account Number:
                       </h2>
                       <h2 class="font-semibold mb-2 text-gray-600">
-                        10039588118
+                        61300052238
                       </h2>
                     </div>
                   </div>
@@ -521,12 +357,12 @@ function App() {
                         State Bank Of India
                       </h2>
                     </div>
-                    <div className="">
+                    <div className="mr-6">
                       <h2 class="font-semibold mb-2 text-gray-400">
                         IFSC Code:
                       </h2>
                       <h2 class="font-semibold mb-2 text-gray-600">
-                        IDFB0041353
+                        SBIN0031940
                       </h2>
                     </div>
                   </div>
@@ -534,8 +370,11 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
+      <ServicesList />
+      <QrCodeWithUPI />
+
       <div class=" bg-gradient-to-r from-indigo-800 via-indigo-500 to-indigo-800 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
         <div class="flex bg-white text-black justify-center items-center w-[90%] md:w-[70%] lg:w-[50%] md:mx-20 lg:mx-20 my-10 rounded-md">
           <div className=" flex flex-col items-center justify-center w-full px-4">
@@ -654,7 +493,7 @@ function App() {
               <i class="bi bi-telephone-fill  px-2"></i>{" "}
               <span className="underline underline-offset-1">
                 {" "}
-                +91 9462748219
+                +91 9414278219
               </span>
             </a>
           </p>
