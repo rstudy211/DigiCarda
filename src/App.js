@@ -39,28 +39,28 @@ function App() {
   };
   return (
     <>
-      <div class="flex z-20 px-5 text-white sticky font-bold top-0 flex-row items-center justify-between bg-gradient-to-r from-indigo-800 via-indigo-500 to-indigo-800 drop-shadow-lg py-2">
-        <div className="rounded-full flex justify-center items-center h-20 w-20 text-xl md:text-2xl  ring-offset-2  text-white bg-indigo-600">
+      <div class="sticky top-0 z-20 flex flex-row items-center justify-between bg-gradient-to-r from-emerald-700 via-emerald-700 to-emerald-700 px-5 py-2 font-bold text-white drop-shadow-lg">
+        <div class="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-600 text-xl text-white ring-offset-2 md:text-2xl">
           <h1>E-Tax</h1>
         </div>
-        <div className="flex flex-col items-end md:items-center md:mr-16  ">
-          <h1 class="text-2xl lg:pb-1 font-poppins  tracking-wide text-shadow-md lg:mb-2 mb-0 lg:text-5xl">
+        <div class="flex flex-col items-end md:mr-16 md:items-center">
+          <h1 class="font-poppins text-shadow-md mb-0 text-2xl tracking-wide lg:mb-2 lg:pb-1 lg:text-5xl">
             Emitra &amp; E-taxway
           </h1>
-          <p class="text-lg font-medium text-yellow-300 text-shadow-md mb-2 sm:mb-0 sm:text-2xl">
+          <p class="text-shadow-md mb-2 text-lg font-medium text-yellow-300 sm:mb-0 sm:text-2xl">
             e-Tax Way Group
           </p>
-          <div class="w-16 h-1 md:mt-2 bg-yellow-300 rounded-full"></div>
+          <div class="h-1 w-16 rounded-full bg-yellow-300 md:mt-2"></div>
         </div>
-        <div className="hidden md:block"></div>
+        <div class="hidden md:block"></div>
       </div>
-      <div class="flex flex-col bg-gray-100 py-8 shadow-inner  justify-center items-center  md:py-12">
-        <span class="text-indigo-700   font-bold  text-2xl md:text-5xl px-12 ">
+      <div class="flex flex-col bg-green-50 py-8 shadow-inner  justify-center items-center  md:py-12">
+        <span class="text-green-700   font-bold  text-2xl md:text-5xl px-12 ">
           Products & Services
         </span>
 
-        <div class="grid bg-gray-100 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-11 py-3 md:py-16">
-          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-gray-600 hover:shadow-white-500 border-white-300 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
+        <div class="grid bg-green-50 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-11 py-3 md:py-16">
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-green-700 hover:shadow-white-500 border-green-500 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
             <p class=" text-xl md:text-2xl text-center font-poppins font-bold">
               Income Tax
             </p>
@@ -74,13 +74,13 @@ function App() {
               href="https://api.whatsapp.com/send?phone=919414278219&amp;text=Enquiry for product: Income tax"
               target="_blank"
             >
-              <span class="rounded font-bold  bg-orange-500 px-6 py-2 text-sm text-white">
+              <span class="rounded font-bold  bg-green-500 px-6 py-2 text-sm text-white">
                 ENQIRY NOW
               </span>
             </a>
           </div>
 
-          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-gray-600 hover:shadow-white-500 border-neutral-300 rounded-2xl px-5 py-3 flex flex-col gap-3 justify-center items-center">
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-green-700 hover:shadow-white-500 border-green-500 rounded-2xl px-5 py-3 flex flex-col gap-3 justify-center items-center">
             <p class="text-xl md:text-2xl text-center font-poppins font-bold">
               GST-Registration
             </p>
@@ -94,12 +94,12 @@ function App() {
               href="https://api.whatsapp.com/send?phone=919414278219&amp;text=Enquiry for product: GST-Registration"
               target="_blank"
             >
-              <span class="rounded font-bold bg-orange-500 px-6 py-2 text-sm text-white">
+              <span class="rounded font-bold bg-green-500 px-6 py-2 text-sm text-white">
                 ENQIRY NOW
               </span>
             </a>
           </div>
-          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-gray-600 hover:shadow-white-500 border-slate-300 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
+          <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-green-700 hover:shadow-white-500 border-green-500 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
             <p class=" text-xl md:text-2xl text-center font-poppins font-bold">
               Pancard
             </p>
@@ -113,7 +113,7 @@ function App() {
               href="https://api.whatsapp.com/send?phone=919414278219&amp;text=Enquiry for product: Pancard"
               target="_blank"
             >
-              <span class="rounded font-bold bg-orange-500 px-6 py-2 text-sm text-white">
+              <span class="rounded font-bold bg-green-500 px-6 py-2 text-sm text-white">
                 ENQIRY NOW
               </span>
             </a>
@@ -377,7 +377,7 @@ function App() {
       <ServicesList />
       <QrCodeWithUPI />
 
-      <div class=" bg-gradient-to-r from-indigo-800 via-indigo-500 to-indigo-800 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
+      <div class=" bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
         <div class="flex bg-white text-black justify-center items-center w-[90%] md:w-[70%] lg:w-[50%] md:mx-20 lg:mx-20 my-10 rounded-md">
           <div className=" flex flex-col items-center justify-center w-full px-4">
             {" "}
@@ -385,7 +385,9 @@ function App() {
               <span class="text-white-700 text-3xl border-b-4 px-7 py-2 border-white-700 my-5">
                 About Me
               </span>
-
+              {/* <div class="h-[150px] w-[150px] my-10 ring-[10px] ring-white ring-opacity-25 mx-auto overflow-hidden rounded-full">
+                <img class="  " src={profilepic} alt="" />
+              </div> */}
               <div class="h-40 w-40 my-10 mx-auto rounded-full overflow-hidden">
                 <img
                   class="w-full h-full object-cover"
@@ -471,7 +473,7 @@ function App() {
             <br></br>
             <button
               type="submit"
-              class="rounded hover:bg-indigo-600 hover:text-white bg-white text-indigo-700 w-[100px] py-1"
+              class="rounded hover:bg-green-600 hover:text-white bg-white text-green-700 w-[100px] py-1"
             >
               Send
             </button>
@@ -480,24 +482,21 @@ function App() {
           <br></br>
         </div>
       </div>
-      <footer class="bg-gray-100 py-12 border-t border-white-200">
-        <div class="container mx-auto px-4 text-center text-neutral-400">
+      <footer class="bg-green-800 py-12 border-t border-green-500">
+        <div class="container mx-auto px-4 text-center text-white">
           <a
-            class="text-neutral-600 hover:text-white-500 mb-5"
-            href="mailto:hrmsharma5@email.com"
+            class="text-white hover:text-green-500 mb-5"
+            href="mailto:etaxwayadvgurup@gmail.com"
           >
-            hrmsharma5@email.com
+            etaxwayadvgurup@gmail.com
           </a>
-          <p class="leading-normal text-neutral-600">
+          <p class="leading-normal">
             1461 Vinoba Bhave Naga Near Khade Ganesh Ji, Kota (Raj.)
           </p>
-          <p className="text-gray-600">
+          <p class="text-green-400">
             <a href="tel:+919462748219">
-              <i class="bi bi-telephone-fill  px-2"></i>{" "}
-              <span className="underline underline-offset-1">
-                {" "}
-                +91 9414278219
-              </span>
+              <i class="bi bi-telephone-fill px-2"></i>
+              <span class="underline underline-offset-1">+91 9414278219</span>
             </a>
           </p>
         </div>

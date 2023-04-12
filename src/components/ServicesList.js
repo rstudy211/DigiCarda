@@ -27,9 +27,9 @@ function ServiceList() {
   const visibleServices = showAll ? services : services.slice(0, 4);
 
   return (
-    <div className="bg-gradient-to-r from-indigo-800 via-indigo-500 to-indigo-800 pt-8 md:py-8 px-8">
+    <div className="bg-green-50 pt-8 md:py-8 px-8">
       <div className="container mx-auto ">
-        <h1 className="text-3xl font-bold text-white mb-8 md:mb-12">
+        <h1 className="text-3xl font-bold text-green-600 mb-8 md:mb-12">
           Our Other Services
         </h1>
         <ul className="grid md:grid-cols-4 grid-cols-2 gap-4 text-white">
@@ -44,7 +44,7 @@ function ServiceList() {
         </ul>
         {!showAll ? (
           <button
-            className="block mx-auto mt-8 animate-bounce py-2 px-4 bg-indigo-600 text-white font-medium rounded-md transition-colors duration-300 hover:bg-indigo-700"
+            className="block mx-auto mt-8 animate-bounce py-2 px-4 bg-green-600 text-white font-medium rounded-md transition-colors duration-300 hover:bg-green-700"
             onClick={() => setShowAll(true)}
           >
             Show More
@@ -52,7 +52,7 @@ function ServiceList() {
           </button>
         ) : (
           <button
-            className="block mx-auto mt-8 py-2 px-4 animate-bounce bg-indigo-600 text-white font-medium rounded-md transition-colors duration-300 hover:bg-indigo-700"
+            className="block mx-auto mt-8 py-2 px-4 animate-bounce bg-green-600 text-white font-medium rounded-md transition-colors duration-300 hover:bg-green-700"
             onClick={() => setShowAll(false)}
           >
             Show Less
