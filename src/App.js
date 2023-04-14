@@ -494,7 +494,7 @@ function App() {
             1461 Vinoba Bhave Naga Near Khade Ganesh Ji, Kota (Raj.)
           </p>
           <p class="text-green-400">
-            <a href="tel:+919462748219">
+            <a href="tel:+919414278219">
               <i class="bi bi-telephone-fill px-2"></i>
               <span class="underline underline-offset-1">+91 9414278219</span>
             </a>
