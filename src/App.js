@@ -45,7 +45,7 @@ function App() {
         </div>
         <div class="flex flex-col items-end md:mr-16 md:items-center">
           <h1 class="font-poppins text-shadow-md mb-0 text-2xl tracking-wide lg:mb-2 lg:pb-1 lg:text-5xl">
-            Emitra &amp; E-taxway
+            Emitra &amp; E-taxservices
           </h1>
           <p class="text-shadow-md mb-2 text-lg font-medium text-yellow-300 sm:mb-0 sm:text-2xl">
             e-Tax Way Group
