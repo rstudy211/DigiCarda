@@ -490,10 +490,17 @@ function App() {
           >
             etaxwayadvgurup@gmail.com
           </a>
-          <p class="leading-normal">
-            1461 Vinoba Bhave Naga Near Khade Ganesh Ji, Kota (Raj.)
+          <p class="">
+            <a href="https://www.google.com/maps/place/25%C2%B006'39.9%22N+75%C2%B050'05.8%22E/@25.111084,75.8327653,17z/data=!3m1!4b1!4m4!3m3!8m2!3d25.111084!4d75.834954?entry=ttu">
+              <i class="bi bi-geo-alt-fill  leading-normal animate-pulse text-3xl text-red-600 ">
+                {" "}
+              </i>
+              <span className="mb-4 italic text-xl">
+                1461 Vinoba Bhave Naga Near Khade Ganesh Ji, Kota (Raj.)
+              </span>
+            </a>
           </p>
-          <p class="text-green-400">
+          <p class="text-green-400 mt-3">
             <a href="tel:+919414278219">
               <i class="bi bi-telephone-fill px-2"></i>
               <span class="underline underline-offset-1">+91 9414278219</span>
