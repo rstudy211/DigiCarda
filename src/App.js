@@ -413,6 +413,12 @@ function App() {
               </a>
 
               <i class="bi text-[#0088cc] rounded-full  text-4xl bi-telegram "></i>
+              <a
+                href="tel:+919414278219"
+                class="rounded-full px-2 py-1 border-green-400 bg-green-400 text-white"
+              >
+                <i class="bi bi-telephone-fill  text-xl "></i>
+              </a>
             </div>
           </div>
         </div>
@@ -485,7 +491,7 @@ function App() {
       <footer class="bg-green-800 py-12 border-t border-green-500">
         <div class="container mx-auto px-4 text-center text-white">
           <a
-            class="text-white hover:text-green-500 mb-5"
+            class="text-white tracking-wide hover:text-green-500 mb-5"
             href="mailto:etaxwayadvgurup@gmail.com"
           >
             etaxwayadvgurup@gmail.com
@@ -495,8 +501,8 @@ function App() {
               <i class="bi bi-geo-alt-fill  leading-normal animate-pulse text-3xl text-red-600 ">
                 {" "}
               </i>
-              <span className="mb-4 italic text-xl">
-                1461 Vinoba Bhave Naga Near Khade Ganesh Ji, Kota (Raj.)
+              <span className="mb-4 italic text-md">
+                1461 Vinoba Bhave Nagar (324005), Kota (Raj.)
               </span>
             </a>
           </p>
