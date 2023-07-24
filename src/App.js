@@ -39,12 +39,12 @@ function App() {
   };
   return (
     <>
-      <div class="sticky top-0 z-20 flex flex-row items-center justify-between bg-gradient-to-r from-emerald-700 via-emerald-700 to-emerald-700 px-5 py-2 font-bold text-white drop-shadow-lg">
+      <div class="sticky top-0 z-20 opacity-95 flex flex-row items-center justify-between bg-gradient-to-r from-emerald-800 via-emerald-600 to-emerald-800 px-5 py-2 font-bold text-white drop-shadow-lg">
         <div class="flex h-20 w-20 items-center justify-center rounded-full bg-emerald-600 text-xl text-white ring-offset-2 md:text-2xl">
           <h1>E-Tax</h1>
         </div>
         <div class="flex flex-col items-end md:mr-16 md:items-center">
-          <h1 class="font-poppins text-shadow-md mb-0 text-2xl tracking-wide lg:mb-2 lg:pb-1 lg:text-5xl">
+          <h1 class="font-poppins text-shadow-md mb-0 sm:text-2xl tracking-wide lg:mb-2 lg:pb-1 lg:text-5xl">
             Emitra &amp; E-taxservices
           </h1>
           <p class="text-shadow-md mb-2 text-lg font-medium text-yellow-300 sm:mb-0 sm:text-2xl">
@@ -59,7 +59,7 @@ function App() {
           Products & Services
         </span>
 
-        <div class="grid bg-green-50 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 lg:px-11 py-3 md:py-16">
+        <div class="grid bg-green-50 md:grid-cols-2 lg:grid-cols-3  gap-12 px-6 lg:px-11 py-3 md:py-16">
           <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-green-700 hover:shadow-white-500 border-green-500 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
             <p class=" text-xl md:text-2xl text-center font-poppins font-bold">
               Income Tax
@@ -377,7 +377,7 @@ function App() {
       <ServicesList />
       <QrCodeWithUPI />
 
-      <div class=" bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
+      <div class=" py-10 bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
         <div class="flex bg-white text-black justify-center items-center w-[90%] md:w-[70%] lg:w-[50%] md:mx-20 lg:mx-20 my-10 rounded-md">
           <div className=" flex flex-col items-center justify-center w-full px-4">
             {" "}
@@ -403,16 +403,16 @@ function App() {
               the financial system, I am dedicated to delivering efficient and
               effective support to individuals and businesses.
             </p>
-            <div class="flex justify-center gap-5 my-10">
+            <div class="flex justify-center items-center gap-5 my-10">
               <a
-                class="mt-1"
+                class="bg-green-500 h-[37px] w-[37px] items-center  rounded-full flex justify-center "
                 href="https://api.whatsapp.com/send?phone=919414278219&amp;text="
                 target="_blank"
               >
-                <i class="bi bg-green-500 text-white rounded-full px-2 py-1 text-2xl bi-whatsapp"></i>
+                <i class="bi  text-white   text-2xl bi-whatsapp"></i>
               </a>
 
-              <i class="bi text-[#0088cc] rounded-full  text-4xl bi-telegram "></i>
+              <i class="bi text-[#0088cc]  text-4xl bi-telegram "></i>
               <a
                 href="tel:+919414278219"
                 class="rounded-full px-2 py-1 border-green-400 bg-green-400 text-white"
@@ -488,7 +488,7 @@ function App() {
           <br></br>
         </div>
       </div>
-      <footer class="bg-green-800 py-12 border-t border-green-500">
+      <footer class="bg-emerald-800 py-12 border-t border-green-500">
         <div class="container mx-auto px-4 text-center text-white">
           <a
             class="text-white tracking-wide hover:text-green-500 mb-5"
