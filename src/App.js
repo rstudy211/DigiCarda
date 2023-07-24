@@ -378,7 +378,7 @@ function App() {
       <QrCodeWithUPI />
 
       <div class=" py-10 bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
-        <div class="flex bg-white text-black justify-center items-center w-[90%] md:w-[70%] lg:w-[50%] md:mx-20 lg:mx-20 my-10 rounded-md">
+        <div class="flex bg-emerald-600  text-white justify-center items-center w-[90%] md:w-[70%] lg:w-[50%] md:mx-20 lg:mx-20 my-10 rounded-md">
           <div className=" flex flex-col items-center justify-center w-full px-4">
             {" "}
             <div class="py-2">
@@ -396,7 +396,7 @@ function App() {
                 />
               </div>
             </div>
-            <p class="text-center leading-7 text-neutral-700 font-light sm:w-42 md:w-42 ">
+            <p class="text-center leading-7 text-neutral-50 font-light sm:w-42 md:w-42 ">
               “As Harimohan Sharma & Assosiates, we provides a range of
               financial services, including ITR filing, GST registration and
               filing, PAN card services, and eMitra services. With expertise in
@@ -412,7 +412,9 @@ function App() {
                 <i class="bi  text-white   text-2xl bi-whatsapp"></i>
               </a>
 
-              <i class="bi text-[#0088cc]  text-4xl bi-telegram "></i>
+              <a class="rounded-full bg-white h-8 flex justify-center items-center">
+                <i class="bi text-[#00bbff]   text-4xl bi-telegram "></i>
+              </a>
               <a
                 href="tel:+919414278219"
                 class="rounded-full px-2 py-1 border-green-400 bg-green-400 text-white"
@@ -422,15 +424,15 @@ function App() {
             </div>
           </div>
         </div>
-        <div class="flex flex-col justify-center items-center h-[80%] text-white w-full ">
-          <span class="text-white text-3xl border-b-4 px-7 py-2 border-white my-5">
-            Contact Us
-          </span>
+        <div class="flex flex-col justify-center gap-4  pt-5  items-center h-[80%] text-white w-full ">
           <form
             ref={form}
             onSubmit={sendEmail}
-            class="flex w-[90%] sm:w-[90%] lg:w-[60%] flex-col items-center gap-2 rounded-md bg-white bg-opacity-25 px-7 py-5 "
+            class="flex w-[90%]  sm:w-[90%] lg:w-[60%] flex-col items-center gap-2 rounded-md bg-emerald-800 bg-opacity-25 px-7 py-5 "
           >
+            <span class="text-white text-3xl border-b-4 px-7 py-2 border-white ">
+              Contact Us
+            </span>
             <div class="flex w-full  flex-col">
               <label for="username" class="pb-1">
                 Name
@@ -479,7 +481,7 @@ function App() {
             <br></br>
             <button
               type="submit"
-              class="rounded hover:bg-green-600 hover:text-white bg-white text-green-700 w-[100px] py-1"
+              class="rounded hover:bg-emerald-800 hover:text-white bg-white text-emerald-700 w-[100px] py-1"
             >
               Send
             </button>
