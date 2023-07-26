@@ -422,7 +422,7 @@ function App() {
               the financial system, I am dedicated to delivering efficient and
               effective support to individuals and businesses.
             </p>
-            <div class="flex justify-between items-center w-full px-8 mt-10">
+            <div class="flex justify-between items-center w-full px-8 my-10">
               <a
                 class="bg-green-500 h-[37px] w-[37px] items-center  rounded-full flex justify-center "
                 href="https://api.whatsapp.com/send?phone=919414278219&amp;text="
@@ -441,11 +441,11 @@ function App() {
                 <i class="bi bi-telephone-fill  text-xl "></i>
               </a>
             </div>
-            <div className="flex  items-center px-5 mb-5 w-full text-sm text-center">
+            {/* <div className="flex  items-center px-5 mb-5 w-full text-sm text-center">
               <p className="">Whatsapp</p>
               <p className="mx-12">Telegram</p>
               <p className="ml-3">Call Me</p>
-            </div>
+            </div> */}
           </div>
         </div>
         <div
