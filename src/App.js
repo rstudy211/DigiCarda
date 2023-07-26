@@ -393,6 +393,7 @@ function App() {
       <ServicesList />
       <QrCodeWithUPI />
 
+      {/* About Me and Contact Us section */}
       <div
         id="about"
         class=" py-10 bg-gradient-to-r pt-28 from-emerald-500 via-emerald-400 to-emerald-500 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center"
@@ -517,7 +518,7 @@ function App() {
           <br></br>
         </div>
       </div>
-      <footer class="bg-emerald-800 py-12 border-t border-green-500">
+      <footer class="bg-emerald-800  pt-10 pb-20 border-t border-green-500">
         <div class="container mx-auto px-4 text-center text-white">
           <a
             class="text-white tracking-wide hover:text-green-500 mb-5"
@@ -543,7 +544,8 @@ function App() {
           </p>
         </div>
       </footer>
-      <nav className="flex px-2 bottom-0 sticky  border-t border-emerald-700 md:hidden justify-around items-center text-xl py-2 text-emerald-100 bg-emerald-800">
+      {/* Bottom Navbar */}
+      <nav className="flex px-2 fixed bottom-0 w-full mt-4  border-t border-emerald-700  justify-around items-center text-xl py-2 text-emerald-100 bg-emerald-800">
         <a
           className="flex-col hover:text-white active:text-green-300 order-4 text-center justify-center"
           href="#contact"
