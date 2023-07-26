@@ -27,7 +27,7 @@ function ServiceList() {
   const visibleServices = showAll ? services : services.slice(0, 4);
 
   return (
-    <div className="bg-green-50 py-8 md:py-8 px-8">
+    <div id="services" className="bg-green-50 pt-28 md:py-8 px-8">
       <div className="container mx-auto ">
         <h1 className="text-3xl font-bold text-green-600 mb-8 md:mb-12">
           Our Other Services

@@ -3,7 +3,10 @@ import QrCodeImage from "../images/qrcode.png";
 
 function QrCodeWithUPI() {
   return (
-    <div className="flex flex-col items-center bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-black py-16">
+    <div
+      id="qrcode"
+      className="flex flex-col items-center bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-black pt-28"
+    >
       <div className="bg-white rounded px-5 py-4 flex flex-col items-center">
         <div className="text-xl text-center md:text-2xl font-medium mb-4">
           Scan the QR code or use UPI ID:

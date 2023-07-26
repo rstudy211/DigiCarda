@@ -13,6 +13,22 @@ import QrCodeWithUPI from "./components/QrCodeWithUPI";
 import profilepic from "./images/profilepic.jpeg";
 function App() {
   const form = useRef();
+  function scrollToSection(sectionId) {
+    const section = document.querySelector(`#${sectionId}`);
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  //   console.log(navLinks);
+  navLinks.forEach((link) => {
+    console.log("step1", link);
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const sectionId = link.id;
+      //   console.log(sectionId);
+      scrollToSection(sectionId);
+    });
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -377,9 +393,12 @@ function App() {
       <ServicesList />
       <QrCodeWithUPI />
 
-      <div class=" py-10 bg-gradient-to-r from-emerald-500 via-emerald-400 to-emerald-500 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center">
+      <div
+        id="about"
+        class=" py-10 bg-gradient-to-r pt-28 from-emerald-500 via-emerald-400 to-emerald-500 text-white flex lg:flex-row sm:flex-col flex-col justify-center items-center"
+      >
         <div class="flex bg-emerald-600  text-white justify-center items-center w-[90%] md:w-[70%] lg:w-[50%] md:mx-20 lg:mx-20 my-10 rounded-md">
-          <div className=" flex flex-col items-center justify-center w-full px-4">
+          <div className=" flex flex-col items-center justify-center w-full  px-4">
             {" "}
             <div class="py-2">
               <span class="text-white-700 text-3xl border-b-4 px-7 py-2 border-white-700 my-5">
@@ -403,7 +422,7 @@ function App() {
               the financial system, I am dedicated to delivering efficient and
               effective support to individuals and businesses.
             </p>
-            <div class="flex justify-center items-center gap-5 my-10">
+            <div class="flex justify-between items-center w-full px-8 mt-10">
               <a
                 class="bg-green-500 h-[37px] w-[37px] items-center  rounded-full flex justify-center "
                 href="https://api.whatsapp.com/send?phone=919414278219&amp;text="
@@ -422,9 +441,17 @@ function App() {
                 <i class="bi bi-telephone-fill  text-xl "></i>
               </a>
             </div>
+            <div className="flex  items-center px-5 mb-5 w-full text-sm text-center">
+              <p className="">Whatsapp</p>
+              <p className="mx-12">Telegram</p>
+              <p className="ml-3">Call Me</p>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col justify-center gap-4  pt-5  items-center h-[80%] text-white w-full ">
+        <div
+          id="contact"
+          class="flex flex-col justify-center gap-4  pt-28  items-center h-[80%] text-white w-full "
+        >
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -516,6 +543,44 @@ function App() {
           </p>
         </div>
       </footer>
+      <nav className="flex px-2 bottom-0 sticky  border-t border-emerald-700 md:hidden justify-around items-center text-xl py-2 text-emerald-100 bg-emerald-800">
+        <a
+          className="flex-col hover:text-white active:text-green-300 order-4 text-center justify-center"
+          href="#contact"
+        >
+          <i class="bi bi-chat-square-text-fill"></i>
+          <p className="text-xs">Contact Us</p>
+        </a>
+
+        <a
+          className="flex-col hover:text-white order-2 items-center text-center justify-center"
+          href="#services"
+        >
+          <i class="bi bi-briefcase-fill"></i>
+          <p className="text-xs">Services</p>
+        </a>
+        <a
+          className="flex-col hover:text-white order-2 items-center text-center justify-center"
+          href="#qrcode"
+        >
+          <i class="bi bi-qr-code"></i>
+          <p className="text-xs">Qrcode</p>
+        </a>
+        <a
+          className="flex-col hover:text-white order-1 items-center text-center justify-center"
+          href="#"
+        >
+          <i class="bi bi-house-fill"></i>
+          <p className="text-xs">Home</p>
+        </a>
+        <a
+          className="flex-col hover:text-white order-3 items-center text-center justify-center"
+          href="#about"
+        >
+          <i class="bi bi-person-circle"></i>
+          <p className="text-xs">About Me</p>
+        </a>
+      </nav>
     </>
   );
 }
