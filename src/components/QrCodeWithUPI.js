@@ -17,7 +17,7 @@ function QrCodeWithUPI() {
           alt="QR Code"
         />
         <p className="mt-4 text-lg font-bold text-black">
-          etaxserviceskota@ybl
+          etaxserviceskota@boi
         </p>
       </div>
     </div>
