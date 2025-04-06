@@ -117,7 +117,7 @@ function App() {
           </div>
           <div class="border shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-white text-green-700 hover:shadow-white-500 border-green-500 rounded-2xl py-3 px-5 flex flex-col gap-3 justify-center items-center">
             <p class=" text-xl md:text-2xl text-center font-poppins font-bold">
-              Pancard
+              Pan-card
             </p>
             <img
               class="h-56 w-96 mx-4 rounded "
