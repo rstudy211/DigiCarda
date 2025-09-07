@@ -45,7 +45,7 @@ function QrCodeWithUPI() {
   };
 
   return (
-    <div className="flex flex-col items-center bg-[#f0fdf4] py-8 px-4"> {/* Light green background */}
+    <div id="qrcode" className="flex flex-col items-center bg-[#f0fdf4] py-8 px-4"> {/* Light green background */}
       <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-md border border-emerald-200">
         <h2 className="text-2xl font-bold text-center text-emerald-800 mb-6">
           Pay via UPI
