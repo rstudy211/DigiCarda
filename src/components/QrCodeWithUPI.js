@@ -1,36 +1,13 @@
 import React from "react";
 import QrCodeImage from "../images/qrcode.png";
-import PhonePeLogo from "../images/phonepe.png";
-import GooglePayLogo from "../images/gpay.png";
-import PaytmLogo from "../images/paytm.png";
+import config from "../config.json";
 
 function QrCodeWithUPI() {
-  // UPI Payment Details
-  const upiId = "etaxserviceskota@ybl";
-  const payeeName = "Etax Services";
-  const transactionNote = "Payment for services";
+  // Retrieve UPI payment details from config
+  const { upiId, payeeName, transactionNote, paymentLink, apps } = config.upi;
 
   // Universal UPI Payment Link
-  const upiPaymentLink = `upi://pay?pa=${upiId}&pn=${encodeURIComponent(payeeName)}&am=&cu=INR&tn=${encodeURIComponent(transactionNote)}`;
-
-  // App-specific deep links
-  const upiApps = [
-    { 
-      name: "PhonePe", 
-      scheme: `phonepe://pay?pa=${upiId}&pn=${encodeURIComponent(payeeName)}`,
-      logo: PhonePeLogo
-    },
-    { 
-      name: "Google Pay", 
-      scheme: `tez://upi/pay?pa=${upiId}&pn=${encodeURIComponent(payeeName)}`,
-      logo: GooglePayLogo
-    },
-    { 
-      name: "Paytm", 
-      scheme: `paytmmp://upi/pay?pa=${upiId}&pn=${encodeURIComponent(payeeName)}`,
-      logo: PaytmLogo
-    }
-  ];
+  const upiPaymentLink = paymentLink;
 
   const openUPIApp = (appScheme) => {
     window.location.href = appScheme;
@@ -82,7 +59,7 @@ function QrCodeWithUPI() {
             Open with:
           </h3>
           <div className="grid grid-cols-3 gap-2">
-            {upiApps.map((app) => (
+            {apps.map((app) => (
               <button
                 key={app.name}
                 onClick={() => openUPIApp(app.scheme)}

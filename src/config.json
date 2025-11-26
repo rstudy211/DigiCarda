@@ -1,0 +1,68 @@
+{
+  "header": {
+    "title": "Emitra & E-taxservices",
+    "logoText": "E-Tax",
+    "tagline": "e-Tax Way Group",
+    "backgroundGradient": "from-emerald-800 via-emerald-600 to-emerald-800"
+  },
+  "services": [
+    {
+      "title": "Income Tax",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPsgnEw_BMf9KfwRuYeTUokVSwJtaJqjPQntTF_A8uT3eQRTnNPzuSev1o8pskwyLD1sY&usqp=CAU",
+      "whatsappLink": "https://api.whatsapp.com/send?phone=919414278219&text=Enquiry for product: Income tax"
+    },
+    {
+      "title": "GST-Registration",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk4vwSqXdziYJsZ-522-sT-4NJvoLEdvDaww&usqp=CAU",
+      "whatsappLink": "https://api.whatsapp.com/send?phone=919414278219&text=Enquiry for product: GST-Registration"
+    },
+    {
+      "title": "Pan-card",
+      "imageUrl": "https://www.shutterstock.com/shutterstock/photos/1681665595/display_1500/stock-vector-dummy-pan-card-unique-identity-document-for-indian-citizen-issued-by-government-of-india-vector-1681665595.jpg",
+      "whatsappLink": "https://api.whatsapp.com/send?phone=919414278219&text=Enquiry for product: Pancard"
+    }
+  ],
+  "servicesList": [
+    "NGO Registration",
+    "Trust Registration",
+    "Company Registration",
+    "Company Compliances",
+    "Income Tax",
+    "Tax Compliance",
+    "Gst",
+    "Shop Act Registration",
+    "MSME",
+    "PF & ESI Registration",
+    "Trademark Registration",
+    "FSSAI Registration",
+    "Investment & Trading",
+    "Loans and Insurance",
+    "Wealth Management",
+    "NGO Audit",
+    "School Audit",
+    "Digital Signature (DSC)"
+  ],
+  "upi": {
+    "upiId": "etaxserviceskota@ybl",
+    "payeeName": "Etax Services",
+    "transactionNote": "Payment for services",
+    "paymentLink": "upi://pay?pa=etaxserviceskota@ybl&pn=Etax%20Services&am=&cu=INR&tn=Payment%20for%20services",
+    "apps": [
+      {
+        "name": "PhonePe",
+        "scheme": "phonepe://pay?pa=etaxserviceskota@ybl&pn=Etax%20Services",
+        "logo": "./images/phonepe.png"
+      },
+      {
+        "name": "Google Pay",
+        "scheme": "tez://upi/pay?pa=etaxserviceskota@ybl&pn=Etax%20Services",
+        "logo": "./images/gpay.png"
+      },
+      {
+        "name": "Paytm",
+        "scheme": "paytmmp://upi/pay?pa=etaxserviceskota@ybl&pn=Etax%20Services",
+        "logo": "./images/paytm.png"
+      }
+    ]
+  }
+}

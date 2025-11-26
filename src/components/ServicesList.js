@@ -1,27 +1,8 @@
 import { useState } from "react";
-
-const services = [
-  "NGO Registration",
-  "Trust Registration",
-  "Company Registration",
-  "Company Compliances",
-  "Income Tax",
-  "Tax Compliance",
-  "Gst",
-  "Shop Act Registration",
-  "MSME",
-  "PF & ESI Registration",
-  "Trademark Registration",
-  "FSSAI Registration",
-  "Investment & Trading",
-  "Loans and Insurance",
-  "Wealth Management",
-  "NGO Audit",
-  "School Audit",
-  "Digital Signature (DSC)",
-];
+import config from "../config.json";
 
 function ServiceList() {
+  const services = config.servicesList;
   const [showAll, setShowAll] = useState(false);
 
   const visibleServices = showAll ? services : services.slice(0, 4);
