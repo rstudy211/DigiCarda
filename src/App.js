@@ -48,14 +48,10 @@ function App() {
           title={config.header.title}
           logoText={config.header.logoText}
           tagline={config.header.tagline}
-          
         />
       </div>
       <div id="services">
-        <Services
-          services={config.services}
-          
-        />
+        <Services services={config.services} />
       </div>
 
       <div id="qrcode">

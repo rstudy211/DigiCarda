@@ -66,7 +66,7 @@ function QrCodeWithUPI() {
                 className="flex flex-col items-center justify-center bg-white hover:bg-emerald-50 p-2 rounded-lg transition-all border border-emerald-200"
               >
                 <img 
-                  src={app.logo} 
+                  src={app.logo}
                   alt={`${app.name} Logo`} 
                   className="w-12 h-12 mb-1 object-contain"
                 />

@@ -51,17 +51,17 @@
       {
         "name": "PhonePe",
         "scheme": "phonepe://pay?pa=etaxserviceskota@ybl&pn=Etax%20Services",
-        "logo": "./images/phonepe.png"
+        "logo": "../images/phonepe.png"
       },
       {
         "name": "Google Pay",
         "scheme": "tez://upi/pay?pa=etaxserviceskota@ybl&pn=Etax%20Services",
-        "logo": "./images/gpay.png"
+        "logo": "../images/gpay.png"
       },
       {
         "name": "Paytm",
         "scheme": "paytmmp://upi/pay?pa=etaxserviceskota@ybl&pn=Etax%20Services",
-        "logo": "./images/paytm.png"
+        "logo": "../images/paytm.png"
       }
     ]
   }
